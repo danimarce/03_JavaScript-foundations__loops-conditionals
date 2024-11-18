@@ -6,3 +6,20 @@
         * If it is greater than or equal to 5, print "Logged In with (number)!"
         * If it is less than 5, print "Logged Out with (number)!"
 */
+
+function simulateRandomLogins() {
+    for (let index = 1; index <= 10; index++) {
+        let randomNumber = Math.random();
+        randomNumber = Math.floor((randomNumber * 10) + 1);
+    
+        if (randomNumber >= 5) {
+            window.console.log('Logged In with ' + randomNumber);
+        }
+    
+        if (randomNumber < 5) {
+            window.console.log('Logged Out with ' + randomNumber);
+        }
+    }
+}
+
+simulateRandomLogins();
