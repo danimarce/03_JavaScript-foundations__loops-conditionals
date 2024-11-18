@@ -7,3 +7,23 @@
 
     HINT: Be careful of an infinite loop!
 */
+
+function simulateLoginAttempts() {
+    let loggedIn = false;
+
+    let index = 1;
+
+    while (loggedIn === false) {
+        window.console.log('Incorrect login credentials');
+
+        if (index === 3) {
+            loggedIn = true;
+        }
+
+        index++;
+    }
+
+    window.console.log('Successfully logged in!');
+}
+
+simulateLoginAttempts();
