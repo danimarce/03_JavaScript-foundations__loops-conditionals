@@ -18,3 +18,26 @@
     You made it!
     All done!
 */
+
+function loopCheckpoints() {
+    let number = 1;
+
+    while (number <= 100) {
+        if (number % 10 === 0 && number !== 50 && number !== 100) {
+            window.console.log('Checkpoint! ' + number);
+        }
+
+        if (number === 50) {
+            window.console.log('Halfway there! ' + number);
+        }
+
+        if (number === 100) {
+            window.console.log('You made it! ' + number);
+        }
+        
+        number++;
+    }
+    window.console.log('All done!');
+}
+
+loopCheckpoints();

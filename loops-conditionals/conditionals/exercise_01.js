@@ -7,3 +7,17 @@
 
     HINT: The modulus operator ( % ) is your friend.
 */
+
+function checkEvenOrOdd(number) {
+    if (number % 2 == 0) {
+        window.console.log('Number ' + number + ' is even');
+    } else if (number % 2 != 0) {
+        window.console.log('Number ' + number + ' is odd');
+    }
+}
+
+let testNumber = 2;
+checkEvenOrOdd(testNumber);
+
+testNumber = 3;
+checkEvenOrOdd(testNumber);
