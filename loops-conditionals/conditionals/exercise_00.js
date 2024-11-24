@@ -14,9 +14,13 @@ function animalChecker(animal) {
 
     if (animal === 'cat') {
         window.console.log('Meow!');
-    } else if (animal === 'dog') {
+    }
+    
+    if (animal === 'dog') {
         window.console.log('Woof!');
-    } else {
+    }
+
+    if (animal !== 'cat' && animal !== 'dog') {
         window.console.log('Must be an alien');
     }
 
